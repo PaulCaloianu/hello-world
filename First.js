@@ -1,8 +1,9 @@
-var foo = 45;
-console.log(foo);
-
-function print () {
-    foo = 100;
+// Declare an anonymous function
+(function () {
+    var foo = 42;
+    console.log(window.foo);
+    // → undefined
     console.log(foo);
-    alert("goguleeee");
-}
+    // → 42
+})();
+//^ and call it immediately
